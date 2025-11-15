@@ -60,6 +60,15 @@ A comprehensive Java application that demonstrates various algorithms through in
    java -cp target/classes com.algorithmvisualizer.AlgorithmVisualizerApp
    ```
 
+   **Quick Start (No Maven Required)**:
+   ```bash
+   # Windows
+   ./run.bat
+   
+   # Unix/Linux/macOS
+   ./run.sh
+   ```
+
 4. **Create executable JAR**
    ```bash
    mvn clean package
