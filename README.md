@@ -45,28 +45,36 @@ A comprehensive Java application that demonstrates various algorithms through in
    cd algorithm-visualizer
    ```
 
-2. **Build the project**
-   ```bash
-   mvn clean compile
-   ```
+2. **Build and run the application**
 
-3. **Run the application**
+   **Option A: Using Maven**
    ```bash
+   # Build
+   mvn clean compile
+   
+   # Run
    mvn exec:java
    ```
 
-   Or alternatively:
+   **Option B: Quick Start (No Maven Required)**
    ```bash
-   java -cp target/classes com.algorithmvisualizer.AlgorithmVisualizerApp
-   ```
-
-   **Quick Start (No Maven Required)**:
-   ```bash
-   # Windows
+   # Windows - automatically downloads dependencies, compiles, and runs
    ./run.bat
    
-   # Unix/Linux/macOS
+   # Unix/Linux/macOS - automatically downloads dependencies, compiles, and runs  
    ./run.sh
+   ```
+
+   **Option C: Manual compilation**
+   ```bash
+   # Create target directory
+   mkdir -p target/classes
+   
+   # Compile all Java files
+   javac -cp lib/* -d target/classes src/main/java/com/algorithmvisualizer/**/*.java
+   
+   # Run
+   java -cp "target/classes;lib/*" com.algorithmvisualizer.AlgorithmVisualizerApp
    ```
 
 4. **Create executable JAR**
